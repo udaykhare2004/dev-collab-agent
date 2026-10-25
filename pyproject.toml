@@ -1,0 +1,28 @@
+[project]
+name = "dev-collab-agent"
+version = "0.1.0"
+description = "Production-grade Developer Collaboration RAG Agent"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=1.40.0,<2.0.0",
+    "chromadb>=0.5.23,<2.0.0",
+    "fastembed>=0.4.0,<0.8.0",
+    "rank-bm25>=0.2.2,<0.3.0",
+    "langchain-text-splitters>=0.3.0,<0.4.0",
+    "pydantic>=2.0,<3.0",
+    "rich>=13.7.0,<16.0.0",
+    "python-dotenv>=1.0.0,<2.0.0",
+    "streamlit>=1.36.0,<2.0.0",
+]
+
+[project.scripts]
+dev-collab-agent = "cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
