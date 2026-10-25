@@ -1,0 +1,26 @@
+﻿# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Storage & local index files
+storage/
+
+# Python cache & build junk
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Secrets
+.env
+.env.local
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
